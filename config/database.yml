@@ -8,6 +8,7 @@ default: &default
 
 development:
   <<: *default
+  adapter: postgresql
   database: ruby_knowledge_sharing_social_network_01_db
 
 test:

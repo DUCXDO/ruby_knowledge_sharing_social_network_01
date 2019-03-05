@@ -10,6 +10,8 @@ module RubyKnowledgeSharingSocialNetwork01
   class Application < Rails::Application
     config.load_defaults 5.2
 
+    config.assets.initialize_on_precompile = false
+
     config.i18n.load_path += Dir[
       Rails.root.join('config', 'locales', '**', '*.{rb,yml}')
     ]
